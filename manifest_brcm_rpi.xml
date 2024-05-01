@@ -6,7 +6,7 @@
   <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
     <linkfile dest="rpi4-mkimg.sh" src="mkimg.sh" />
   </project>
-  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
+  <project path="device/brcm/rpi5" name="hmtheboy154/android_device_brcm_rpi5" remote="github" revision="fourteen" >
     <linkfile dest="rpi5-mkimg.sh" src="mkimg.sh" />
   </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
@@ -16,22 +16,6 @@
   <!-- Audio -->
   <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="android-14.0" />
   <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="android-14.0" />
-
-  <!-- Build -->
-  <remove-project name="platform/build" />
-  <remove-project name="platform/build/soong" />
-  <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-14.0" >
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
-    <linkfile dest="build/core" src="core" />
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
-    <linkfile dest="build/target" src="target" />
-    <linkfile dest="build/tools" src="tools" />
-  </project>
-  <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-14.0" >
-    <linkfile dest="Android.bp" src="root.bp" />
-    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
-  </project>
 
   <!-- Camera -->
   <project path="external/libcamera" name="raspberry-vanilla/android_external_libcamera" remote="github" revision="android-14.0" />
@@ -61,9 +45,9 @@
   <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-14.0" />
 
   <!-- Wifi -->
-  <remove-project name="platform/external/wpa_supplicant_8" />
-  <remove-project name="platform/packages/modules/Wifi" />
-  <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0" />
+  <remove-project name="LMODroid/platform_external_wpa_supplicant_8" />
+  <remove-project name="LMODroid/platform_packages_modules_Wifi" />
+  <project path="external/wpa_supplicant_8" name="hmtheboy154/android_external_wpa_supplicant_8" remote="github" revision="fourteen" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0" />
 
 </manifest>
